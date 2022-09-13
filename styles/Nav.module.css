@@ -1,0 +1,42 @@
+.container {
+  background-color: #1C1C1C;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-right: 138.5px;
+  cursor: pointer;
+}
+
+.listContainer {
+  display: flex;
+  color: #FFFFFF;
+  list-style-type: none;
+}
+
+.listContainer li {
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+.second_list li:last-child {
+  margin-right: 101px;
+}
+
+.vert_divider {
+  width: 1px;
+  height: 30px;
+  background-color: #FFFFFF;
+}
+
+.icon {
+  margin-right: 29px;
+  cursor: pointer;
+
+}
+.icon:last-child {
+  margin-right: 0;
+}

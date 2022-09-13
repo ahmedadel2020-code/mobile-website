@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: SF, sans-serif;
 }
 
 a {
@@ -15,12 +14,9 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+  font-family: 'SF';
+  src: url('../asset/SF/SFPRODISPLAYBOLD.OTF');
+  src: url('../asset/SF/SFPRODISPLAYMEDIUM.OTF');
+  src: url('../asset/SF/SFPRODISPLAYREGULAR.OTF');
 }
