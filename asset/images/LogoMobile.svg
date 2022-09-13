@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="33.718" viewBox="0 0 26 33.718">
+  <g id="Group_2918" data-name="Group 2918" transform="translate(-506 -15.282)">
+    <g id="vuesax_bold_apple" data-name="vuesax/bold/apple" transform="translate(509 15.282)">
+      <g id="apple">
+        <path id="BG_135" data-name="BG 135" d="M0,0H19.437V19.437H0Z" fill="none" opacity="0.58"/>
+        <g id="Group" transform="translate(2.933 5.669)">
+          <path id="Vector" d="M12.536,9.848a11.123,11.123,0,0,0,1.02-1.919,3.5,3.5,0,0,1-.462-6.317A4.006,4.006,0,0,0,10.066,0a4.55,4.55,0,0,0-1.79.389A3.3,3.3,0,0,1,7.053.68,4.014,4.014,0,0,1,5.684.364,4.68,4.68,0,0,0,4.024,0,4.119,4.119,0,0,0,.712,2c-1.15,1.782-.948,5.118.907,7.969.664,1.02,1.555,2.162,2.713,2.179a2.486,2.486,0,0,0,1.15-.292,3.419,3.419,0,0,1,1.579-.373,3.284,3.284,0,0,1,1.571.373,2.384,2.384,0,0,0,1.126.292C10.932,12.132,11.872,10.868,12.536,9.848Z" transform="translate(0 0)" fill="#fff"/>
+        </g>
+        <path id="Vector-2" data-name="Vector" d="M3.006,0a3.257,3.257,0,0,1-.713,2.389,2.9,2.9,0,0,1-2.26,1.15A3.012,3.012,0,0,1,.763,1.207,3.52,3.52,0,0,1,3.006,0Z" transform="translate(9.822 1.62)" fill="#fff"/>
+        <path id="Vector-3" data-name="Vector" d="M0,0H19.437V19.437H0Z" fill="none" opacity="0"/>
+      </g>
+    </g>
+    <text id="Premium_Reseller" data-name="Premium 
+Reseller" transform="translate(519 41)" fill="#fff" font-size="6" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="-12" y="0">Premium </tspan><tspan x="-10" y="7">Reseller</tspan></text>
+  </g>
+</svg>

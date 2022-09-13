@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.logo {
+.logo_desktop {
   margin-right: 138.5px;
   cursor: pointer;
 }
@@ -39,4 +39,23 @@
 }
 .icon:last-child {
   margin-right: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    height: 67px;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+  .listContainer, .icon, .vert_divider, .logo_desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .logo_mobile {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
 }

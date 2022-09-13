@@ -1,3 +1,4 @@
+import ImagesSlider from "./ImagesSlider";
 import Nav from "./Nav";
 
 const Layout = ({ children }) => {

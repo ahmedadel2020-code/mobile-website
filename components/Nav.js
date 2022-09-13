@@ -1,15 +1,20 @@
 import navStyles from "../styles/Nav.module.css";
-import Logo from "../asset/images/Logo.svg";
+import LogoDesktop from "../asset/images/LogoDesktop.svg";
+import LogoMobile from "../asset/images/LogoMobile.svg";
 import Search from "../asset/images/Search.svg";
 import Profile from "../asset/images/Profile.svg";
 import Cart from "../asset/images/Cart.svg";
+import Menu from "../asset/images/Menu.svg";
 import Image from "next/image";
 
 const Nav = () => {
   return (
     <div className={navStyles.container}>
-      <div className={navStyles.logo}>
-        <Image src={Logo} alt="apple logo" />
+      <div className={navStyles.logo_desktop}>
+        <Image src={LogoDesktop} alt="apple logo" />
+      </div>
+      <div className={navStyles.logo_mobile}>
+        <Image src={LogoMobile} alt="apple logo" />
       </div>
       <ul className={navStyles.listContainer}>
         <li>Mac</li>
@@ -34,6 +39,11 @@ const Nav = () => {
       </div>
       <div className={navStyles.icon}>
         <Image src={Cart} alt="cart" />
+      </div>
+
+      {/* show Menu in mobile screen */}
+      <div className={navStyles.menu}>
+        <Image src={Menu} alt="Menu" />
       </div>
     </div>
   );
