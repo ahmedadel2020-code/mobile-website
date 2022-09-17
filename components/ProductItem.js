@@ -11,20 +11,21 @@ const ProductItem = ({ product }) => {
           src={product.img[0]}
           alt={product.name}
         />
-        <div className={productStyles.product_name}>
-          {product.name === "name 1"
-            ? "Apple 20W USB-C Power Adapter"
-            : product.name === "name 2"
-            ? "Belkin 3.4A Coiled UltraFast USB Car Charger"
-            : product.name === "name 3"
-            ? "Anker PowerPort III Nano"
-            : product.name === "name 4"
-            ? "Apple Airtag 1 Pack"
-            : null}
-        </div>
-        <div
-          className={productStyles.product_price}
-        >{`$${product.price}.00`}</div>
+        <div className={productStyles.product_name}>{product.name}</div>
+        {product.priceAfterdiscount !== product.price ? (
+          <div className={productStyles.product_price_wrapper}>
+            <div
+              className={productStyles.product_discount}
+            >{`$${product.priceAfterdiscount}.00`}</div>
+            <div
+              className={productStyles.product_price_original}
+            >{`$${product.price}.00`}</div>
+          </div>
+        ) : (
+          <div
+            className={productStyles.product_price}
+          >{`$${product.price}.00`}</div>
+        )}
         <div
           className={
             product.inStock > 0
