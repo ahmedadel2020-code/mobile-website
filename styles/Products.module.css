@@ -99,9 +99,15 @@
     font-size: 8px;
   }
 
-  .product_price, .product_price_original, .product_discount {
+  .product_price_wrapper {
     margin-top: 21px;
+  }
+
+  .product_price, .product_price_original, .product_discount {
     font-size: 10px;
+  }
+  .product_price {
+    margin-top: 21px;
   }
   .in_stock {
     font-size: 7px;

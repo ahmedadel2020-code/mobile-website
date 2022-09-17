@@ -32,17 +32,6 @@ const Footer = () => {
 
   return (
     <div>
-      <div className={footerStyles.subscribe}>
-        <h1>Subscribe our newsletter to be notified when it’ll be live.</h1>
-        <form className={footerStyles.form}>
-          <input
-            className={footerStyles.subscribe_input}
-            placeholder="Email address"
-            type="email"
-          />
-          <button className={footerStyles.subscribe_button}>Subscribe</button>
-        </form>
-      </div>
       <div className={footerStyles.company_info}>
         {windowSize.width > 400 ? (
           <div className={footerStyles.logos_wrapper}>

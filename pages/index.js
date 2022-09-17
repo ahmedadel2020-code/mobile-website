@@ -1,19 +1,20 @@
-import { server } from "../config";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import ImagesSlider from "../components/ImagesSlider";
 import Products from "../components/Products";
+import Subscribe from "../components/Subscribe";
 
 export default function Home({ images, products }) {
   return (
     <div>
       <Head>
         <title>mobile website</title>
-        <meta name="keywords" content="web" />
+        <meta name="keywords" content="web development" />
       </Head>
       <ImagesSlider images={images} />
       <h2 className={styles.title}>Explore Products</h2>
       <Products products={products} />
+      <Subscribe />
     </div>
   );
 }

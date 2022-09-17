@@ -4,15 +4,36 @@ import YellowStar from "../../../asset/images/YellowStar.svg";
 import WhiteStar from "../../../asset/images/WhiteStar.svg";
 import CIBLogo from "../../../asset/images/CIBLogo.png";
 import Shipping from "../../../asset/images/Shipping.svg";
+import { useEffect, useState } from "react";
 import Cube from "../../../asset/images/Cube.svg";
 import Heart from "../../../asset/images/Heart.svg";
-
 import Image from "next/image";
 
 const Product = ({ product, products }) => {
   const yellowStars = [];
   const whiteStars = [];
   const totalStars = 5 - product.numberOfStars;
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+
+      window.addEventListener("resize", handleResize);
+
+      handleResize();
+
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
 
   for (let i = 0; i < product.numberOfStars; i++) {
     yellowStars.push(i);
@@ -147,7 +168,9 @@ const Product = ({ product, products }) => {
           </div>
         </div>
       </div>
-      <h2 className={productStyles.header}>Explore Products</h2>
+      {windowSize.width <= 400 ? (
+        <h2 className={productStyles.header}>Explore Products</h2>
+      ) : null}
       <Products products={products} />
     </div>
   );
