@@ -47,20 +47,45 @@ const Product = ({ product, products }) => {
     <div>
       <div className={productStyles.container}>
         <div className={productStyles.imgs_Wrapper}>
-          {product.img.map((img, index) => (
-            <img
-              src={img}
-              alt={product.name}
-              key={index}
-              className={productStyles.pro_img_small}
-            />
-          ))}
+          {windowSize.width > 400
+            ? product.img.map((img, index) => (
+                <Image
+                  src={img}
+                  alt={product.name}
+                  key={index}
+                  className={productStyles.pro_img_small}
+                  width="80px"
+                  height="80px"
+                />
+              ))
+            : product.img.map((img, index) => (
+                <div key={index} className={productStyles.pro_img_small}>
+                  <Image
+                    src={img}
+                    alt={product.name}
+                    width="32px"
+                    height="32px"
+                  />
+                </div>
+              ))}
         </div>
-        <img
-          src={product.img[0]}
-          alt={product.name}
-          className={productStyles.pro_img_large}
-        />
+        {windowSize.width > 400 ? (
+          <Image
+            src={product.img[0]}
+            alt={product.name}
+            className={productStyles.pro_img_large}
+            width="531px"
+            height="531px"
+          />
+        ) : (
+          <Image
+            src={product.img[0]}
+            alt={product.name}
+            className={productStyles.pro_img_large}
+            width="210px"
+            height="210px"
+          />
+        )}
         <div className={productStyles.pro_details}>
           <div className={productStyles.pro_header}>
             <p className={productStyles.title}>APPLE</p>
