@@ -70,7 +70,7 @@ const ImagesSlider = ({ images }) => {
           src={images[imgIndex].img}
           alt={`${images[imgIndex].id}`}
           className={sliderStyles.sliderImg}
-          width="390px"
+          width="420px"
           height="220px"
         />
       )}
