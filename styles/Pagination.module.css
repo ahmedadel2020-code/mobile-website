@@ -1,0 +1,32 @@
+.arrow {
+  background-color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.pagination {
+  margin: 30px auto 50px auto;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dots_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 400px) {
+  .pagination {
+    display: none
+  }
+}
