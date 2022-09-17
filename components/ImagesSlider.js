@@ -2,10 +2,31 @@ import Image from "next/image";
 import sliderStyles from "../styles/ImagesSlider.module.css";
 import ArrowLeft from "../asset/images/ArrowLeft.svg";
 import ArrowRight from "../asset/images/ArrowRight.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ImagesSlider = ({ images }) => {
   const [imgIndex, setImgIndex] = useState(0);
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+
+      window.addEventListener("resize", handleResize);
+
+      handleResize();
+
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
 
   const handleImage = (direction) => {
     const imgsLength = images.length - 1;
@@ -36,13 +57,23 @@ const ImagesSlider = ({ images }) => {
       >
         <Image src={ArrowLeft} alt="left arrow" />
       </div>
-      <Image
-        src={images[imgIndex].img}
-        alt={`${images[imgIndex].id}`}
-        className={sliderStyles.sliderImg}
-        width="1920"
-        height="494"
-      />
+      {windowSize.width > 400 ? (
+        <Image
+          src={images[imgIndex].img}
+          alt={`${images[imgIndex].id}`}
+          className={sliderStyles.sliderImg}
+          width="1920"
+          height="494"
+        />
+      ) : (
+        <Image
+          src={images[imgIndex].img}
+          alt={`${images[imgIndex].id}`}
+          className={sliderStyles.sliderImg}
+          width="374"
+          height="220px"
+        />
+      )}
 
       <div
         className={`${sliderStyles.arrow} ${sliderStyles.right}`}

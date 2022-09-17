@@ -19,15 +19,11 @@
 
 .left {
   left: 328px;
+  z-index: 3;
 }
 
 .right {
   right: 320px;
-}
-
-.sliderImg {
-  width: 100%;
-  object-fit: contain;
 }
 
 .dots_wrapper {
@@ -51,8 +47,6 @@
   }
 
   .sliderImg {
-    width: 100%;
-    height: 220px;
     object-fit: cover;
   }
 

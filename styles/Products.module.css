@@ -20,9 +20,6 @@
 }
 
 .product_img {
-  width: 220px;
-  height: 220px;
-  object-fit: contain;
   margin: 0 0 33px 22px;
 }
 
@@ -90,11 +87,6 @@
     border-bottom: none;
   }
 
-  .product_img {
-    width: 117px;
-    height: 117px;
-    object-fit: contain;
-  }
   .product_name {
     font-size: 8px;
   }
