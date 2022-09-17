@@ -36,11 +36,12 @@ const ImagesSlider = ({ images }) => {
       >
         <Image src={ArrowLeft} alt="left arrow" />
       </div>
-
-      <img
+      <Image
         src={images[imgIndex].img}
         alt={`${images[imgIndex].id}`}
         className={sliderStyles.sliderImg}
+        width="1920"
+        height="494"
       />
 
       <div
