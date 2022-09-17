@@ -47,7 +47,7 @@ const Product = ({ product, products }) => {
     <div>
       <div className={productStyles.container}>
         <div className={productStyles.imgs_Wrapper}>
-          {windowSize.width > 400
+          {windowSize.width > 450
             ? product.img.map((img, index) => (
                 <Image
                   src={img}
@@ -69,7 +69,7 @@ const Product = ({ product, products }) => {
                 </div>
               ))}
         </div>
-        {windowSize.width > 400 ? (
+        {windowSize.width > 450 ? (
           <Image
             src={product.img[0]}
             alt={product.name}
@@ -193,7 +193,7 @@ const Product = ({ product, products }) => {
           </div>
         </div>
       </div>
-      {windowSize.width <= 400 ? (
+      {windowSize.width <= 450 ? (
         <h2 className={productStyles.header}>Explore Products</h2>
       ) : null}
       <Products products={products} />

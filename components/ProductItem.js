@@ -29,7 +29,7 @@ const ProductItem = ({ product }) => {
   return (
     <Link href="/product/[id]" as={`/product/${product.id}`}>
       <a className={productStyles.product_container}>
-        {windowSize.width > 400 ? (
+        {windowSize.width > 450 ? (
           <div className={productStyles.product_img}>
             <Image
               src={product.img[0]}

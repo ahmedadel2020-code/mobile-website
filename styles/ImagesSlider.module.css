@@ -41,7 +41,7 @@
   transform: translateX(-50%)
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .arrow {
     display: none;
   }

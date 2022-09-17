@@ -54,7 +54,7 @@ const Pagination = ({
           .dot:last-child {
             margin-right: 0;
           }
-          @media only screen and (max-width: 400px) {
+          @media only screen and (max-width: 450px) {
             .dot {
               width: 3px;
               height: 3px;

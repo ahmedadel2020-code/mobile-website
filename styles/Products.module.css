@@ -65,7 +65,7 @@
   color: #D63030;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .products_wrapper {
     width: 339px;
     height: auto;

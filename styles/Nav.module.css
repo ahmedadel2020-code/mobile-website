@@ -41,7 +41,7 @@
   margin-right: 0;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .container {
     height: 67px;
     justify-content: space-between;
@@ -51,7 +51,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 450px) {
   .logo_mobile {
     display: none;
   }

@@ -48,7 +48,7 @@ const Products = ({ products }) => {
 
   return (
     <div>
-      {windowSize.width < 400 ? (
+      {windowSize.width < 450 ? (
         <div className={productsStyles.products_wrapper}>
           {products.map((product) => (
             <ProductItem key={product.id} product={product} />

@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <div>
       <div className={footerStyles.company_info}>
-        {windowSize.width > 400 ? (
+        {windowSize.width > 450 ? (
           <div className={footerStyles.logos_wrapper}>
             <div>
               <Image src={Apple1} alt="apple 1" />

@@ -57,7 +57,7 @@ const ImagesSlider = ({ images }) => {
       >
         <Image src={ArrowLeft} alt="left arrow" />
       </div>
-      {windowSize.width > 400 ? (
+      {windowSize.width > 450 ? (
         <Image
           src={images[imgIndex].img}
           alt={`${images[imgIndex].id}`}
@@ -104,7 +104,7 @@ const ImagesSlider = ({ images }) => {
             background-color: #a7a9ac;
             transition: 0.5s ease;
           }
-          @media only screen and (max-width: 400px) {
+          @media only screen and (max-width: 450px) {
             .dot {
               width: 3px;
               height: 3px;
